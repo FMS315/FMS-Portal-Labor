@@ -91,7 +91,7 @@ const LaborTodayInsights = () =>{
         
         <tr className="labor-today-insights-table-tr">
           <td  className="labor-table-data">(125) hours of overtime scheduled</td>
-          <td  className="labor-table-data">Not Started</td>
+          <td  className="labor-table-data" style={{backgroundColor:"white"}}>Not Started</td>
           <td  className="labor-table-data" onClick={LaborOverages}>ActNow</td>
         </tr>
         <tr className="labor-today-insights-table-tr-even">
@@ -101,7 +101,7 @@ const LaborTodayInsights = () =>{
         </tr>
         <tr className="labor-today-insights-table-tr">
           <td  className="labor-table-data">Create scedule(s) for next week </td>
-          <td  className="labor-table-data">Not Started</td>
+          <td  className="labor-table-data" style={{backgroundColor:"white"}}>Not Started</td>
           <td  className="labor-table-data" onClick={LaborOverages}>ActNow</td>
         </tr>
         <tr className="labor-today-insights-table-tr-even">
@@ -111,7 +111,7 @@ const LaborTodayInsights = () =>{
         </tr>
         <tr className="labor-today-insights-table-tr">
           <td  className="labor-table-data">Prioritize (25 ) invoices during next run</td>
-          <td  className="labor-table-data">In progress</td>
+          <td  className="labor-table-data" style={{backgroundColor:"white"}}>In progress</td>
           <td  className="labor-table-data" onClick={LaborOverages}>ActNow</td>
         </tr>
       </table>

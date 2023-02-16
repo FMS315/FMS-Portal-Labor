@@ -270,30 +270,30 @@ const Laborberkotsuperfoods = () =>{
                        <tr>
           
         <td className="labor-table-data"   ></td>
-        <td className="labor-table-data"  >Marian Nicholoson</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >Marian Nicholoson</td>
         <td className="labor-table-data"  >10893</td>
-        <td className="labor-table-data" >8.0</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.0</td>
         <td className="labor-table-data"  >40.00</td>
-        <td className="labor-table-data" >8.20</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.20</td>
         <td className="labor-table-data"  >8.00</td>
-        <td className="labor-table-data">8.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}} >8.00</td>
         <td className="labor-table-data" >8.50</td>
-        <td className="labor-table-data" >8.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.00</td>
                        </tr>
                       
                        }
                        {isOpen && 
                        <tr>
          <td className="labor-table-data"   ></td>             
-        <td className="labor-table-data"  >Christy Lam</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >Christy Lam</td>
         <td className="labor-table-data"  >11106</td>
-        <td className="labor-table-data" >8.0</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.0</td>
         <td className="labor-table-data"  >40.00</td>
-        <td className="labor-table-data" >8.20</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.20</td>
         <td className="labor-table-data"  >8.00</td>
-        <td className="labor-table-data">8.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}} >8.00</td>
         <td className="labor-table-data" >8.50</td>
-        <td className="labor-table-data" >8.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.00</td>
                        </tr>
                       
                        }

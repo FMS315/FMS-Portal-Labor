@@ -15,7 +15,8 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import Button from "@material-ui/core/Button";
-
+import {FaCalendarDay} from "react-icons/fa";
+import {FaLessThan} from "react-icons/fa";
 
 
 const LaborOverages = () =>{
@@ -232,15 +233,15 @@ const LaborOverages = () =>{
                        {isOpen && 
                        <tr>
                         <td  className="labor-table-data" >  </td>
-        <td className="labor-table-data" onClick={openDepartmentMeat}  >Meat</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}} onClick={openDepartmentMeat}  >Meat</td>
         <td className="labor-table-data"   onClick={handleClickToOpen}  >Marian Nicholoson</td>
-        <td className="labor-table-data"  >10893</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >10893</td>
         <td className="labor-table-data" >8.0</td>
-        <td className="labor-table-data"  >40.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >40.00</td>
         <td className="labor-table-data" >8.20</td>
-        <td className="labor-table-data"  >8.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}   >8.00</td>
         <td className="labor-table-data">8.00</td>
-        <td className="labor-table-data" >8.50</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}} >8.50</td>
         <td className="labor-table-data" >8.00</td>
                        </tr>
                       
@@ -248,15 +249,15 @@ const LaborOverages = () =>{
                        {isOpen && 
                        <tr>
                         <td  className="labor-table-data" >  </td>
-        <td className="labor-table-data"  >Grocery</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}   >Grocery</td>
         <td className="labor-table-data"  >Christy Lam</td>
-        <td className="labor-table-data"  >11106</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}   >11106</td>
         <td className="labor-table-data" >8.0</td>
-        <td className="labor-table-data"  >40.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >40.00</td>
         <td className="labor-table-data" >8.20</td>
-        <td className="labor-table-data"  >8.00</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.00</td>
         <td className="labor-table-data">8.00</td>
-        <td className="labor-table-data" >8.50</td>
+        <td className="labor-table-data" style={{backgroundColor:"white"}}  >8.50</td>
         <td className="labor-table-data" >8.00</td>
                        </tr>
                       
@@ -328,13 +329,19 @@ const LaborOverages = () =>{
         <DialogTitle style={{backgroundColor:"#575757",color:"white"}}>Schedule  Details</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <div>
+            <div style={{paddingBottom:20}}>
            <span style={{color:"black",fontSize:13,fontWeight:"bolder"}}>SCEDULE FOR MARION NICHOLSON ID #11106</span>
            <h5 style={{color:"black",fontWeight:"bolder"}}>45.00</h5>
            <span style={{color:"black",fontSize:12}} >Total Hours Scheduled this Period</span>
            </div>
-           <div>
-
+           <div style={{display:"flex",flexDirection:"row"}}>
+           <FaCalendarDay size={14}  /><span style={{fontSize:13,paddingRight:20}}>Today</span>
+           <FaLessThan   size={14}/><span style={{fontSize:13}}>January 16 - January 22,2023</span>
+           <FaGreaterThan   size={14}/>
+           <div style={{float:"left",alignItems:"left"}}>
+            <span style={{fontSize:10,paddingRight:20,paddingLeft:20}}>ACTUAL/PROJ</span>
+            <span style={{fontSize:10}}>TIME OVER SCHEDULE</span>
+           </div>
            </div>
            <div>
             <table>
@@ -351,83 +358,83 @@ const LaborOverages = () =>{
               <tbody>
                 <tr>
                   <td className="labor-table-data">Moday 1/16</td>
-                  <td className="labor-table-data">06.30A</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>06.30A</td>
                   <td className="labor-table-data">03:00P</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">8.00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.00</td>
                   <td className="labor-table-data">8.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr>
                   <td className="labor-table-data">Tuesday 1/17</td>
-                  <td className="labor-table-data">9.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9.50</td>
                   <td className="labor-table-data">0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">9</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9</td>
                   <td className="labor-table-data">0.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr>
                   <td className="labor-table-data">Wednesday 1/18</td>
-                  <td className="labor-table-data">9.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9.50</td>
                   <td className="labor-table-data">0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">9</td>
+                  <td className="labor-table-data " style={{backgroundColor:"white"}}>9</td>
                   <td className="labor-table-data">0.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr>
                   <td className="labor-table-data">Thursday 1/19</td>
-                  <td className="labor-table-data">9.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9.50</td>
                   <td className="labor-table-data">0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data"> 9</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}> 9</td>
                   <td className="labor-table-data">0.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr>
                   <td className="labor-table-data">Friday 1/20</td>
-                  <td className="labor-table-data">9.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9.50</td>
                   <td className="labor-table-data">0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">9</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9</td>
                   <td className="labor-table-data">0.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr>
                   <td className="labor-table-data">Saturday 1/21</td>
-                  <td className="labor-table-data">9.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9.50</td>
                   <td className="labor-table-data">0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">9</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9</td>
                   <td className="labor-table-data">0.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr>
                   <td className="labor-table-data">Sunday 1/22</td>
-                  <td className="labor-table-data">9.50</td>
-                  <td className="labor-table-data">0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9.50</td>
+                  <td className="labor-table-data" >0:00</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>-</td>
                   <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">-</td>
-                  <td className="labor-table-data">9</td>
-                  <td className="labor-table-data">0.50</td>
-                  <td className="labor-table-data">8.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>9</td>
+                  <td className="labor-table-data" >0.50</td>
+                  <td className="labor-table-data" style={{backgroundColor:"white"}}>8.50</td>
                 </tr>
                 <tr style={{backgroundColor:"#676767", color:"white"}}>
-                  <td className="labor-table-data">TOTALS</td>
-                  <td className="labor-table-data"></td>
-                  <td className="labor-table-data"></td>
-                  <td className="labor-table-data"></td>
-                  <td className="labor-table-data"></td>
-                  <td className="labor-table-data">40</td>
-                  <td className="labor-table-data">45</td>
-                  <td className="labor-table-data">5</td>
+                  <td className="labor-table-data" >TOTALS</td>
+                  <td className="labor-table-data" style={{backgroundColor:"#676767"}}></td>
+                  <td className="labor-table-data" ></td>
+                  <td className="labor-table-data" style={{backgroundColor:"#676767"}}> </td>
+                  <td className="labor-table-data" ></td>
+                  <td className="labor-table-data" style={{backgroundColor:"#676767"}}>40</td>
+                  <td className="labor-table-data" >45</td>
+                  <td className="labor-table-data" style={{backgroundColor:"#676767"}}>5</td>
                 </tr>
               </tbody>
             </table>
